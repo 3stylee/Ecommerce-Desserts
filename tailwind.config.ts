@@ -16,6 +16,9 @@ module.exports = {
 				success: "#2e7d32",
 				error: "#DD1C1A",
 			},
+			transitionProperty: {
+				width: "width",
+			},
 		},
 	},
 	plugins: [],

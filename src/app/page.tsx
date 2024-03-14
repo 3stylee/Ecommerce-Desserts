@@ -1,7 +1,7 @@
 import React from "react"
 
 export const Page = () => {
-	return <p>Hi</p>
+	return <p>Home</p>
 }
 
 export default Page
