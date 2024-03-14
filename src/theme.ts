@@ -1,20 +1,11 @@
 "use client"
 import { ThemeOptions, createTheme } from "@mui/material/styles"
-import { Lora, Source_Sans_3 } from "next/font/google"
+import { Source_Sans_3 } from "next/font/google"
 
 //https://coolors.co/5b5f97-edadc7-a9cef4-ecdcb0-dd1c1a
+//https://zenoo.github.io/mui-theme-creator/
 
-const lora = Lora({
-	weight: ["400", "500", "600", "700"],
-	subsets: ["latin"],
-	display: "swap",
-})
-
-const sourceSansPro = Source_Sans_3({
-	weight: ["400", "500", "600", "700"],
-	subsets: ["latin"],
-	display: "swap",
-})
+const sourceSans = Source_Sans_3({ subsets: ["latin"] })
 
 const themeOptions: ThemeOptions = {
 	palette: {
@@ -33,10 +24,7 @@ const themeOptions: ThemeOptions = {
 		},
 	},
 	typography: {
-		fontFamily: lora.style.fontFamily,
-		button: {
-			fontFamily: sourceSansPro.style.fontFamily,
-		},
+		fontFamily: sourceSans.style.fontFamily,
 	},
 }
 

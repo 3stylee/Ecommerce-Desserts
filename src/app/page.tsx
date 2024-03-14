@@ -1,8 +1,7 @@
 import React from "react"
-import { TitleBanner } from "../globalComponents/titleBanner"
 
 export const Page = () => {
-	return <TitleBanner />
+	return <p>Hi</p>
 }
 
 export default Page
