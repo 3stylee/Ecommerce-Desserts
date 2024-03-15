@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import TitleBanner from "@/globalComponents/titleBanner"
+import TitleBanner from "@/components/globalComponents/titleBanner"
 import { ThemeProvider } from "@mui/material"
 import theme from "../theme"
 

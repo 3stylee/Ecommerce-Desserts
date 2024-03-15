@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 module.exports = {
 	content: [
 		"./app/**/*.{js,ts,jsx,tsx,mdx}", // Note the addition of the `app` directory.
@@ -18,7 +21,12 @@ module.exports = {
 			},
 			transitionProperty: {
 				width: "width",
+				display: "display",
 			},
+		},
+		screens: {
+			xs: "475px",
+			...defaultTheme.screens,
 		},
 	},
 	plugins: [],

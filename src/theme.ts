@@ -1,11 +1,13 @@
 "use client"
 import { ThemeOptions, createTheme } from "@mui/material/styles"
-import { Source_Sans_3 } from "next/font/google"
+import { Raleway, Source_Sans_3 } from "next/font/google"
 
 //https://coolors.co/5b5f97-edadc7-a9cef4-ecdcb0-dd1c1a
 //https://zenoo.github.io/mui-theme-creator/
 
 const sourceSans = Source_Sans_3({ subsets: ["latin"] })
+
+const raleway = Raleway({ subsets: ["latin"] })
 
 const themeOptions: ThemeOptions = {
 	palette: {
@@ -24,7 +26,10 @@ const themeOptions: ThemeOptions = {
 		},
 	},
 	typography: {
-		fontFamily: sourceSans.style.fontFamily,
+		fontFamily: raleway.style.fontFamily,
+		button: {
+			fontFamily: sourceSans.style.fontFamily,
+		},
 	},
 }
 
