@@ -14,8 +14,8 @@ const MobileDrawer = ({ sidebarOpen, setSidebarOpen }: MobileDrawerProps) => {
 	return (
 		<div
 			className={`${
-				sidebarOpen ? "translate-x-0 z-10" : "-translate-x-full  w-0 z-0"
-			} md:w-0 h-full bg-white absolute left-0 origin-top-left w-11/12 transition-all duration-300`}>
+				sidebarOpen ? "translate-x-0" : "-translate-x-full  w-0"
+			} md:w-0 h-full bg-white absolute left-0 origin-top-left w-11/12 transition-transform duration-300 z-50`}>
 			<div className={`p-4 md:hidden ${sidebarOpen ? "block" : "hidden"} transition-display duration-700`}>
 				<IconButton onClick={() => setSidebarOpen(false)}>
 					<CloseIcon sx={{ fontSize: 32 }} />

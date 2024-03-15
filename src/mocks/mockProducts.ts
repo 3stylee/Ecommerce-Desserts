@@ -1,0 +1,68 @@
+import { Products } from "@/config/models/productData"
+
+export const mockProducts = {
+	"0001": {
+		title: "Biscoff Cheesecake",
+		description:
+			"A creamy cheesecake with a Biscoff biscuit base, topped with Biscoff spread and finished with a Biscoff biscuit.",
+		price: 4.3,
+		type: "Cheesecake",
+		flavours: ["Biscoff"],
+		inStock: true,
+		images: ["https://placehold.co/390x487"],
+	},
+	"0002": {
+		title: "Chocolate Cupcake",
+		description: "A rich chocolate cupcake with a chocolate buttercream frosting.",
+		price: 2.5,
+		type: "Cupcake",
+		flavours: ["Chocolate"],
+		inStock: true,
+		images: ["https://placehold.co/390x487"],
+	},
+	"0003": {
+		title: "Vanilla Sponge Cake",
+		description: "A light and fluffy vanilla sponge cake with a vanilla buttercream frosting.",
+		price: 10.0,
+		type: "Sponge Cake",
+		flavours: ["Vanilla"],
+		inStock: true,
+		images: ["https://placehold.co/390x487"],
+	},
+	"0004": {
+		title: "Strawberry Cheesecake",
+		description: "A creamy cheesecake with a digestive biscuit base, topped with fresh strawberries.",
+		price: 5.0,
+		type: "Cheesecake",
+		flavours: ["Strawberry"],
+		inStock: true,
+		images: ["https://placehold.co/390x487"],
+	},
+	"0005": {
+		title: "Nutella Cupcake",
+		description: "A rich chocolate cupcake with a Nutella buttercream frosting.",
+		price: 3.0,
+		type: "Cupcake",
+		flavours: ["Nutella"],
+		inStock: true,
+		images: ["https://placehold.co/390x487"],
+	},
+	"0006": {
+		title: "Biscoff Sponge Cake",
+		description: "A light and fluffy sponge cake with a Biscoff buttercream frosting.",
+		price: 8.0,
+		type: "Sponge Cake",
+		flavours: ["Biscoff"],
+		inStock: true,
+		images: ["https://placehold.co/390x487"],
+	},
+	"0007": {
+		title: "Strawberry Cupcake",
+		description: "A light and fluffy vanilla cupcake with a fresh strawberry buttercream frosting.",
+		price: 2.5,
+		type: "Cupcake",
+		flavours: ["Strawberry"],
+		inStock: true,
+		images: ["https://placehold.co/390x487"],
+	},
+} as Products

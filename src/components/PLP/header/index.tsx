@@ -8,7 +8,7 @@ interface HeaderProps {
 
 export const Header = ({ title }: HeaderProps) => {
 	return (
-		<div className="flex items-center justify-between p-2 pt-4 capitalize">
+		<div className="flex items-center justify-between p-4 capitalize sticky top-0 bg-white z-10">
 			<Typography variant="h5">
 				{title} <span className="text-gray-500">(69)</span>
 			</Typography>

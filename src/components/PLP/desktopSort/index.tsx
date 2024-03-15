@@ -13,7 +13,7 @@ const DesktopSort = () => {
 	}
 
 	return (
-		<FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+		<FormControl sx={{ m: 1, minWidth: 120 }} size="small" className="hidden md:block m-0">
 			<InputLabel id="demo-select-small-label">Sort By</InputLabel>
 			<Select
 				labelId="demo-select-small-label"
