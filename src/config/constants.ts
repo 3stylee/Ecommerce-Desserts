@@ -1,1 +1,1 @@
-export const MENU_QUICK_LINKS = ["cakes", "cookies", "brownies", "other"]
+export const MENU_QUICK_LINKS = ["brownies", "cookies", "cakes", "other"]

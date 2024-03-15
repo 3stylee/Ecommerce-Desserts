@@ -13,7 +13,7 @@ const TitleBanner = () => {
 	return (
 		<>
 			<MobileDrawer sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-			<div className="bg-primary justify-between items-center flex h-15 py-4 px-4 md:px-8 md:h-18">
+			<div className="bg-primary justify-between items-center flex py-4 px-4 md:px-8">
 				<div className="flex md:hidden items-center xs:w-20">
 					<IconButton className="text-white" onClick={() => setSidebarOpen(true)}>
 						<MenuIcon sx={{ fontSize: 32 }} />
