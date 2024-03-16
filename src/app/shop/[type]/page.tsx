@@ -1,13 +1,12 @@
 import Filters from "@/components/PLP/filters"
 import { Header } from "@/components/PLP/header"
 import ProductSummary from "@/components/PLP/productSummary"
-import ProductTile from "@/components/PLP/productSummary/productTile"
 import { mockFilterData } from "@/mocks/mockFilterData"
 import { mockProducts } from "@/mocks/mockProducts"
 import { Container } from "@mui/material"
 import React from "react"
 
-export const PLP = ({ params }: any) => {
+const PLP = ({ params }: any) => {
 	return (
 		<Container maxWidth="xl" className="p-0 md:px-4">
 			<Header title={params.type} />

@@ -4,6 +4,7 @@ import InputLabel from "@mui/material/InputLabel"
 import MenuItem from "@mui/material/MenuItem"
 import FormControl from "@mui/material/FormControl"
 import Select, { SelectChangeEvent } from "@mui/material/Select"
+import { SORT_OPTIONS } from "@/config/constants"
 
 const DesktopSort = () => {
 	const [sort, setSort] = React.useState("popular")
@@ -21,10 +22,11 @@ const DesktopSort = () => {
 				value={sort}
 				label="Sort By"
 				onChange={handleChange}>
-				<MenuItem value="popular">Most Popular</MenuItem>
-				<MenuItem value="title">Alphabetical</MenuItem>
-				<MenuItem value="price">Price: Low - High</MenuItem>
-				<MenuItem value="pricerev">Price: High - Low</MenuItem>
+				{Object.keys(SORT_OPTIONS).map((key) => (
+					<MenuItem key={key} value={key}>
+						{SORT_OPTIONS[key]}
+					</MenuItem>
+				))}
 			</Select>
 		</FormControl>
 	)

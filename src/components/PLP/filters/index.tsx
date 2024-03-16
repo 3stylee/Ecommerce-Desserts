@@ -9,7 +9,7 @@ interface FiltersProps {
 
 const Filters = ({ filters }: FiltersProps) => {
 	return (
-		<div className="w-64 hidden md:block px-4 sticky top-16">
+		<div className="w-auto hidden md:block px-4 sticky top-48">
 			{Object.keys(filters).map((filter, index) => {
 				const { title, options } = filters[filter]
 				return (

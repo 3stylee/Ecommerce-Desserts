@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import TitleBanner from "@/components/globalComponents/titleBanner"
+import Footer from "@/components/globalComponents/footer"
 import { ThemeProvider } from "@mui/material"
 import theme from "../theme"
 
@@ -23,6 +24,7 @@ export default function RootLayout({
 				<body className={`${inter.className} h-screen overflow-y-scroll`}>
 					<TitleBanner />
 					{children}
+					<Footer />
 				</body>
 			</ThemeProvider>
 		</html>

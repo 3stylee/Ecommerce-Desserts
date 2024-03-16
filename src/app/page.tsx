@@ -1,6 +1,6 @@
 import React from "react"
 
-export const Page = () => {
+const Page = () => {
 	return <p>Home</p>
 }
 
